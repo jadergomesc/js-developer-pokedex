@@ -1,0 +1,220 @@
+body {
+    min-width: 300px;
+    margin: 0;
+} 
+ #sectionPrim {
+  border: 2px solid #ccc;     /* borda */
+  border-radius: 20px;        /* cantos arredondados */
+  padding: 16px;              /* espaço interno */
+  box-shadow: purple 1px 2px 4px 4px;
+  z-index: 0;
+}
+
+ 
+ #sectionSecund {
+  border: 2px solid #ccc;     /* borda */
+  border-radius: 25px;        /* cantos arredondados */
+  padding: 16px;              /* espaço interno */
+  background-color: #f9f9f9;  /* cor de fundo */
+  height: 60%;
+  z-index: 1;
+  margin-top: -10%;
+  
+}
+ body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Estilo das abas */
+    .tab {
+      display: flex;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .tab button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      background: #f1f1f1;
+      outline: none;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .tab button.active {
+      background: purple;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Conteúdo das abas */
+    .tabcontent {
+      display: none;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .tabcontent.active {
+      display: block;
+    }
+.content h1{
+      text-align: center;
+      color: purple;
+      text-shadow: 1px -1px 1px #000000ff;
+      margin-bottom: 20px;
+}
+#sectionPrim img {
+     display: block;
+     margin: 10% auto;
+     width:50%;
+}
+#nomePokemon{
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    
+}
+
+.menus {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffa600ff;
+    text-shadow: 1px -1px 1px #000000ff;
+}
+
+      .normal {
+         background-color: #a6a877;
+   
+      }
+   
+      .grass {
+         background-color: #77c850;
+   
+      }
+   
+      .fire {
+         background-color: #ee7f30;
+   
+      }
+   
+      .water {
+         background-color: #678fee;
+   
+      }
+   
+      .electric {
+         background-color: #f7cf2e;
+   
+      }
+   
+      .ice {
+         background-color: #98d5d7;
+   
+      }
+   
+      .ground {
+         background-color: #dfbf69;
+   
+      }
+   
+      .flying {
+         background-color: #a98ff0;
+   
+      }
+   
+      .poison {
+         background-color: #a040a0;
+   
+      }
+   
+      .fighting  {
+         background-color: #bf3029;
+   
+      }
+   
+      .psychic {
+         background-color: #f65687;
+   
+      }
+   
+      .dark {
+         background-color: #725847;
+   
+      }
+   
+      .rock {
+         background-color: #b8a137;
+   
+      }
+   
+      .bug {
+         background-color: #a8b720;
+   
+      }
+   
+      .ghost {
+         background-color: #6e5896;
+   
+      }
+   
+      .steel {
+         background-color: #b9b7cf;
+   
+      }
+   
+      .dragon {
+         background-color: #6f38f6;
+   
+      }
+   
+      .fairy {
+         background-color: #f9aec7;
+   
+      }
+
+
+
+    
+
+  
+  
+/* ===== TELAS PEQUENAS ===== */
+@media (min-width: 375px) and (max-width: 702px) {
+  /* Ajustes específicos para smartphones */
+  #sectionSecund {
+    height: auto; /* Deixe flexível para caber bem em telas menores */
+    padding: 10px;
+  }
+}
+
+/* ===== TELAS MÉDIAS ===== */
+@media (min-width: 703px) and (max-width: 1040px) {
+  #sectionSecund {
+    height: 900px;
+  }
+}
+
+/* ===== TELAS GRANDES ===== */
+@media (min-width: 1041px) and (max-width: 1360px) {
+  #sectionSecund {
+    height: 900px;
+  }
+}
+
+/* ===== TELAS EXTRA GRANDES ===== */
+@media screen and (min-width: 1361px) {
+  body {
+    transform: scale(0.9);           /* Diminui levemente o tamanho da página */
+    transform-origin: top center;    /* Centraliza o zoom */
+  }
+
+  .container {
+    max-width: 1200px;               /* Mais espaço em telas grandes */
+    margin: 40px auto;
+  }
+
+  header, footer {
+    font-size: 1.1rem;
+  }
+}
